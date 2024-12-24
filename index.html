@@ -57,7 +57,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#">Testimonials </a></li>
+          <li><a href="#testimonial">Testimonials </a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -66,7 +66,7 @@
   </header>
 
   <main class="main">
-  <!-- /*--------------------------------------------------------------
+    <!-- /*--------------------------------------------------------------
                      # Hero Section
   --------------------------------------------------------------*/ -->
     <section id="hero" class="hero section light-background">
@@ -79,14 +79,14 @@
               presence, boost engagement, and drive measurable results.
             </p>
             <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started Today</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+              <a href="https://connect.tltechnologies.net/" class="btn-get-started">Get Started Today</a>
+              <a href="https://www.youtube.com/watch?v=86Eo4t4-Wpk"
                 class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
                   Video</span></a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/BDM.png" class="img-fluid" alt="" />
+            <img src="assets/img/BDMock.png" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -166,7 +166,8 @@
                 <span>Flat Setup Fee: <b>$99 (₹5,000)</b></span>
               </li>
             </ul>
-            <a href="#" class="read-more"><span>Learn More About Us</span><i class="bi bi-arrow-right"></i></a>
+            <a href="https://connect.tltechnologies.net/" class="read-more"><span>Learn More About Us</span><i
+                class="bi bi-arrow-right"></i></a>
           </div>
 
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
@@ -215,7 +216,7 @@
               <div class="icon">
                 <i class="bi bi-activity"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a class="stretched-link">
                 <h3>Custom Digital Site</h3>
               </a>
               <p>
@@ -230,7 +231,7 @@
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a class="stretched-link">
                 <h3>Social Media Mastery</h3>
               </a>
               <p>
@@ -245,7 +246,7 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a class="stretched-link">
                 <h3>Engaging Content Creation</h3>
               </a>
               <p>
@@ -259,13 +260,13 @@
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a class="stretched-link">
                 <h3>SEO Optimization</h3>
               </a>
               <p>
                 For social media posts and websites to improve organic reach.
               </p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a class="stretched-link"></a>
             </div>
           </div>
 
@@ -274,13 +275,13 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a class="stretched-link">
                 <h3>Google Boost Campaigns</h3>
               </a>
               <p>
                 Monthly ad strategies to target your audience effectively.
               </p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a class="stretched-link"></a>
             </div>
           </div>
 
@@ -289,11 +290,11 @@
               <div class="icon">
                 <i class="bi bi-chat-square-text"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a class="stretched-link">
                 <h3>24/7 Support & AI Chatbot</h3>
               </a>
               <p>Seamless client engagement with intelligent support.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a class="stretched-link"></a>
             </div>
           </div>
           <!-- End Service Items -->
@@ -689,6 +690,178 @@
 
 
     <!-- /*--------------------------------------------------------------
+                     # Testimonial Section
+  --------------------------------------------------------------*/ -->
+
+
+
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      .testimonial-section {
+        position: relative;
+        max-width: 900px;
+        margin: 50px auto;
+        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .testimonial-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .testimonial-card {
+        flex: 1 0 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+      }
+
+      .testimonial-image {
+        flex: 0 0 30%;
+        text-align: center;
+      }
+
+      .testimonial-image img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+      }
+
+      .testimonial-content {
+        flex: 1;
+        padding-left: 20px;
+      }
+
+      .testimonial-author {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .testimonial-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .testimonial-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .rating {
+        color: #ffde59;
+      }
+
+      /* Navigation Dots */
+      .testimonial-dots {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .testimonial-dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .testimonial-dot.active {
+        background-color: #ffde59;
+      }
+    </style>
+
+
+    <section id="testimonial" class="testimonial-section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <div>
+          <span>Let's Connect</span>
+          <span class="description-title">Get in Touch</span>
+        </div>
+      </div>
+      <div class="testimonial-container" id="testimonialContainer">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+
+          <div class="testimonial-content">
+            <p class="testimonial-author">Kate Rogers - Graphic Designer</p>
+            <p class="testimonial-title">Amazing Customer Service</p>
+            <p class="testimonial-text">
+              I needed a refund for tickets to an event that was changed last minute.
+              I experienced great customer service and the issue was resolved in a timely manner.
+            </p>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+
+          <div class="testimonial-content">
+            <p class="testimonial-author">John Smith - Entrepreneur</p>
+            <p class="testimonial-title">Incredible Support</p>
+            <p class="testimonial-text">
+              The team was fantastic! They resolved my issues quickly and ensured I was completely satisfied.
+            </p>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Dots -->
+      <div class="testimonial-dots">
+        <span class="testimonial-dot active" data-index="0"></span>
+        <span class="testimonial-dot" data-index="1"></span>
+      </div>
+    </section>
+
+    <script>
+      const container = document.getElementById('testimonialContainer');
+      const dots = document.querySelectorAll('.testimonial-dot');
+      let index = 0;
+
+      function updateTestimonials() {
+        container.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+      }
+
+      function autoSlide() {
+        index = (index + 1) % dots.length;
+        updateTestimonials();
+      }
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          index = i;
+          updateTestimonials();
+        });
+      });
+
+      setInterval(autoSlide, 5000);
+    </script>
+
+
+
+
+
+    <!-- /*--------------------------------------------------------------
                      # Contact Section
   --------------------------------------------------------------*/ -->
 
@@ -747,7 +920,7 @@
           </div>
         </div>
       </div>
-      
+
     </section>
 
   </main>
@@ -758,29 +931,122 @@
                         # Footer Section
   --------------------------------------------------------------*/ -->
 
-  <footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer">
     <div class="container">
-      <div class="copyright text-center">
-        <p>
-          © <span>Copyright</span>
-          <strong class="px-1 sitename">eStartup</strong>
-          <span>All Rights Reserved</span>
-        </p>
+      <div class="row justify-content-between">
+        <!-- Links Sections -->
+        <div class="col-md-3 col-sm-6">
+          <h4 class="footer-title">Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+
+      <!-- Social Media Links -->
+      <div class="social-links text-center mt-4">
+        <a href="https://www.linkedin.com/company/tltechnologiespvtltd" class="social-icon"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/tltechnologiespvtltd" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/tltechnologiespvtltd" class="social-icon"><i class="bi bi-instagram"></i></a>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+      <!-- Copyright -->
+      <div class="copyright text-center mt-4">
+        <p>© 2024 <strong style="color: #fc6767;">TL Technologies</strong>. All Rights Reserved.</p>
       </div>
     </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6 class="mb-4">Last Updated: December 2024</h6>
+
+            <section>
+              <h6 class="fw-bold">1. Information We Collect</h6>
+              <p>We collect information that you provide directly to us, including but not limited to:</p>
+              <ul>
+                <li>Contact information (name, email, phone number)</li>
+                <li>Account credentials</li>
+                <li>Payment information</li>
+                <li>Communication preferences</li>
+              </ul>
+            </section>
+
+            <section>
+              <h6 class="fw-bold">2. How We Use Your Information</h6>
+              <p>Your information helps us to:</p>
+              <ul>
+                <li>Provide, maintain, and improve our services</li>
+                <li>Process your transactions</li>
+                <li>Send you technical notices and support messages</li>
+                <li>Respond to your comments and questions</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6 class="mb-4">Last Updated: December 2024</h6>
+
+            <section>
+              <h6 class="fw-bold">1. Agreement to Terms</h6>
+              <p>By accessing our services, you agree to be bound by these Terms and Conditions and all applicable laws
+                and regulations.</p>
+            </section>
+
+            <section>
+              <h6 class="fw-bold">2. Use License</h6>
+              <p>Permission is granted to temporarily download one copy of the materials (information or software) on TL
+                Technologies's website for personal, non-commercial transitory viewing only.</p>
+            </section>
+
+            <section>
+              <h6 class="fw-bold">3. Disclaimer</h6>
+              <p>The materials on TL Technologies's website are provided on an 'as is' basis. TL Technologies makes no
+                warranties, expressed or implied, and hereby disclaims and negates all other warranties including,
+                without limitation, implied warranties or conditions of merchantability, fitness for a particular
+                purpose, or non-infringement of intellectual property or other violation of rights.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </footer>
 
   <!-- /End Footer Section -->
