@@ -1,10 +1,4 @@
-/**
-* Template Name: eStartup
-* Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -61,12 +55,59 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
+document.addEventListener("DOMContentLoaded", function() {
+  const preloader = document.getElementById('preloader');
+  const progressBar = document.querySelector('.progress-bar');
+  const loadingText = document.querySelector('.loader-text');
+  const minimumLoadTime = 2500; // 2.5 seconds minimum display time
+  const startTime = Date.now();
+  let progress = 0;
+
+  // Update progress bar
+  function updateProgress() {
+    if (progress < 90) {
+      progress += Math.random() * 20;
+      progress = Math.min(progress, 90);
+      progressBar.style.width = progress + '%';
+      loadingText.textContent = 'Loading... ' + Math.round(progress) + '%';
+    }
   }
+
+  // Start progress updates
+  const progressInterval = setInterval(updateProgress, 200);
+
+  // Hide preloader function
+  function hidePreloader() {
+    // Quickly complete the progress bar
+    progress = 100;
+    progressBar.style.width = '100%';
+    loadingText.textContent = 'Loading... 100%';
+    
+    // Clear the progress interval
+    clearInterval(progressInterval);
+    
+    // Add slight delay before hiding
+    setTimeout(() => {
+      preloader.classList.add('preloader-hidden');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 600);
+    }, 400);
+  }
+
+  // Handle page load
+  window.addEventListener('load', function() {
+    const currentTime = Date.now();
+    const elapsedTime = currentTime - startTime;
+    
+    if (elapsedTime < minimumLoadTime) {
+      setTimeout(hidePreloader, minimumLoadTime - elapsedTime);
+    } else {
+      hidePreloader();
+    }
+  });
+});
+    
 
   /**
    * Scroll top button
@@ -119,3 +160,55 @@
   });
 
 })();
+
+const container = document.getElementById('testimonialContainer');
+const dots = document.querySelectorAll('.testimonial-dot');
+let index = 0;
+
+function updateTestimonials() {
+  container.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+}
+
+function autoSlide() {
+  index = (index + 1) % dots.length;
+  updateTestimonials();
+}
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    index = i;
+    updateTestimonials();
+  });
+});
+
+setInterval(autoSlide, 5000);
+
+
+  /**
+   * cookie
+   */
+
+document.addEventListener("DOMContentLoaded", function() {
+  const cookieConsent = document.getElementById("cookieConsent");
+  const acceptCookies = document.getElementById("acceptCookies");
+  const rejectCookies = document.getElementById("rejectCookies");
+  
+  // Show cookie consent popup only if not already accepted or rejected
+  if (localStorage.getItem("cookiesAccepted") === null) {
+      cookieConsent.classList.remove("d-none");
+  } else if (localStorage.getItem("cookiesAccepted") === "false") {
+      cookieConsent.classList.add("d-none");
+  }
+  
+  acceptCookies.addEventListener("click", function() {
+      localStorage.setItem("cookiesAccepted", "true");
+      cookieConsent.classList.add("d-none");  // Hide the cookie consent message
+  });
+  
+  rejectCookies.addEventListener("click", function() {
+      localStorage.setItem("cookiesAccepted", "false");
+      cookieConsent.classList.add("d-none");  // Hide the cookie consent message
+  });
+});
