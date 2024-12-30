@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- <======================================== NOTES START ==============================================>
+
+ Libraries used: "Bootstrap" for CSS" for icons, "AOS" for animations.
+ Refer to the official documentation of the mentioned libraries before making changes in the code.
+
+ To run the code:
+ 1. Simply open the `index.html` (or the main HTML file) in your web browser.
+   - You can double-click on the file or right-click and select "Open with" to choose your preferred browser.
+
+ Created Date: 3-Dec-2024 || Created By: Arjun N || Module: 1 ||
+ Modified Date: - || Modified By: - || Module: 1 ||
+ Modified Date: - || Modified By: - || Module: 1 ||
+
+ Technical Summary (Pre-setups):
+ - Created Date/By: Arjun N
+ - Domain: 
+ - Hosting: Vercel
+ - SSL: Cloudflare
+
+ Phase Summary:
+ - Created Date/By: Arjun N  
+ - Phase 1: Setups || Initial configurations, environment, and library setup.
+ - Phase 2: Development/Main Page Creation || Feature implementation and main page design.
+ - Phase 3: Production || Deployment, testing, and final production readiness.
+
+ Library Versions:
+ - Bootstrap: 5.x.x
+ - Nice Select: 1.x.x
+ - AOS: 2.x.x
+
+ Known Issues:
+ - None at this time.
+
+<======================================== NOTES END ==============================================> -->
+
+
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Index - eStartup Bootstrap Template</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <title>Being Digital</title>
+
+  <!-- meta tags -->
+  <meta name="title" content="Being Digital - Your Ultimate Digital Marketing Solution">
+  <meta name="description"
+    content="Transform your online presence with Being Digital. Expert digital marketing services including social media management, SEO, content creation, and Google advertising. Get 3X visibility in 3 months.">
+  <meta name="keywords"
+    content="digital marketing agency, social media marketing, SEO services, content creation, Google ads, digital marketing solutions, online marketing, digital strategy, web development">
+  <meta name="author" content="TL Technologies">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beingdigital.tltechnologies.net">
+  <meta property="og:title" content="Being Digital - Digital Marketing Solutions That Drive Results">
+  <meta property="og:description"
+    content="Expert digital marketing services with proven ROI. Social media management, SEO, content creation, and Google advertising solutions for business growth.">
+  <meta property="og:image" content="https://beingdigital.tltechnologies.net/assets/img/BDMock.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://beingdigital.tltechnologies.net">
+  <meta property="twitter:title" content="Being Digital - Transform Your Online Presence">
+  <meta property="twitter:description"
+    content="Comprehensive digital marketing solutions: Social media, SEO, content creation, and Google ads. Start with just $99 setup fee.">
+  <meta property="twitter:image" content="https://beingdigital.tltechnologies.net/assets/img/BDMock.png">
+
+  <!-- Additional Tags -->
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://beingdigital.tltechnologies.net">
+  <!-- End meta tags -->
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/logo.png" rel="icon" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Fonts -->
@@ -27,17 +91,13 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/cookie.css" rel="stylesheet" />
 
-  <!-- =======================================================
-  * Template Name: eStartup
-  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
+
 <body class="index-page">
+
   <!-- /*--------------------------------------------------------------
                      # Navbar Section
   --------------------------------------------------------------*/ -->
@@ -394,8 +454,6 @@
     <!-- /Features Section -->
 
 
-
-
     <!-- /*--------------------------------------------------------------
                      # Pricing Section
   --------------------------------------------------------------*/ -->
@@ -562,8 +620,6 @@
     <!-- /Pricing Section -->
 
 
-
-
     <!-- /*--------------------------------------------------------------
                      # FAQ Section
   --------------------------------------------------------------*/ -->
@@ -577,27 +633,25 @@
                 <span>Frequently Asked </span><strong>Questions</strong>
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Duis aute irure dolor in reprehenderit
+                Discover answers to common questions about TL BEING DIGITAL's services and how we help businesses grow
+                digitally.
               </p>
             </div>
           </div>
 
-          <!-- Faq items-->
+          <!-- FAQ items -->
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <div class="faq-container">
+
               <div class="faq-item faq-active">
                 <h3>
                   <span class="num">1.</span>
-                  <span>Non consectetur a erat nam at lectus urna duis?</span>
+                  <span>What is TL BEING DIGITAL?</span>
                 </h3>
                 <div class="faq-content">
                   <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                    id volutpat lacus laoreet non curabitur gravida. Venenatis
-                    lectus magna fringilla urna porttitor rhoncus dolor purus
-                    non.
+                    TL BEING DIGITAL is a digital marketing service that enhances online presence through expert social
+                    media management, content creation, and strategic growth.
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -606,17 +660,12 @@
               <div class="faq-item">
                 <h3>
                   <span class="num">2.</span>
-                  <span>Feugiat scelerisque varius morbi enim nunc faucibus a
-                    pellentesque?</span>
+                  <span>What platforms do you manage?</span>
                 </h3>
                 <div class="faq-content">
                   <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi. Id interdum velit laoreet id donec
-                    ultrices. Fringilla phasellus faucibus scelerisque
-                    eleifend donec pretium. Est pellentesque elit ullamcorper
-                    dignissim. Mauris ultrices eros in cursus turpis massa
-                    tincidunt dui.
+                    We manage platforms like Facebook, Instagram, LinkedIn, Google My Business, YouTube, Pinterest, and
+                    Twitter to ensure a comprehensive online presence.
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -625,17 +674,12 @@
               <div class="faq-item">
                 <h3>
                   <span class="num">3.</span>
-                  <span>Dolor sit amet consectetur adipiscing elit
-                    pellentesque?</span>
+                  <span>What services are included in the packages?</span>
                 </h3>
                 <div class="faq-content">
                   <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                    sagittis orci. Faucibus pulvinar elementum integer enim.
-                    Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                    tellus pellentesque eu tincidunt. Lectus urna duis
-                    convallis convallis tellus. Urna molestie at elementum eu
-                    facilisis sed odio morbi quis
+                    Services include account setup, content creation, ad boosts, performance reporting, and ongoing
+                    support for your digital marketing needs.
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -644,17 +688,12 @@
               <div class="faq-item">
                 <h3>
                   <span class="num">4.</span>
-                  <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in
-                    nulla?</span>
+                  <span>What are the pricing options?</span>
                 </h3>
                 <div class="faq-content">
                   <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi. Id interdum velit laoreet id donec
-                    ultrices. Fringilla phasellus faucibus scelerisque
-                    eleifend donec pretium. Est pellentesque elit ullamcorper
-                    dignissim. Mauris ultrices eros in cursus turpis massa
-                    tincidunt dui.
+                    Packages start at ₹15,000/month, with options scaling up to ₹50,000/month for premium services,
+                    including dedicated account management and custom campaigns.
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -663,16 +702,12 @@
               <div class="faq-item">
                 <h3>
                   <span class="num">5.</span>
-                  <span>Tempus quam pellentesque nec nam aliquam sem et tortor
-                    consequat?</span>
+                  <span>How do I get started?</span>
                 </h3>
                 <div class="faq-content">
                   <p>
-                    Molestie a iaculis at erat pellentesque adipiscing
-                    commodo. Dignissim suspendisse in est ante in. Nunc vel
-                    risus commodo viverra maecenas accumsan. Sit amet nisl
-                    suscipit adipiscing bibendum est. Purus gravida quis
-                    blandit turpis cursus in
+                    Schedule a consultation, review a custom proposal, sign the contract, and let us set up and optimize
+                    your social media presence to achieve your goals.
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -680,185 +715,211 @@
 
             </div>
           </div>
-          <!-- End Faq items-->
+          <!-- End FAQ items -->
         </div>
       </div>
     </section>
+
     <!-- /End Faq Section -->
-
-
 
 
     <!-- /*--------------------------------------------------------------
                      # Testimonial Section
   --------------------------------------------------------------*/ -->
 
-
-
-    <style>
-      /* General Styles */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
-      }
-
-      .testimonial-section {
-        position: relative;
-        max-width: 900px;
-        margin: 50px auto;
-        background: linear-gradient(135deg, #ff758c, #ff7eb3);
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      }
-
-      .testimonial-container {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .testimonial-card {
-        flex: 1 0 100%;
-        padding: 40px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: #fff;
-      }
-
-      .testimonial-image {
-        flex: 0 0 30%;
-        text-align: center;
-      }
-
-      .testimonial-image img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 4px solid #fff;
-      }
-
-      .testimonial-content {
-        flex: 1;
-        padding-left: 20px;
-      }
-
-      .testimonial-author {
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      .testimonial-title {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 10px 0;
-      }
-
-      .testimonial-text {
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
-
-      .rating {
-        color: #ffde59;
-      }
-
-      /* Navigation Dots */
-      .testimonial-dots {
-        text-align: center;
-        margin: 20px 0;
-      }
-
-      .testimonial-dot {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background-color: #fff;
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-      }
-
-      .testimonial-dot.active {
-        background-color: #ffde59;
-      }
-    </style>
-
-
-    <section id="testimonial" class="testimonial-section">
+    <section id="testimonial" class="testimonial section">
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact Us</h2>
+        <h2>Testimonials</h2>
         <div>
-          <span>Let's Connect</span>
-          <span class="description-title">Get in Touch</span>
-        </div>
-      </div>
-      <div class="testimonial-container" id="testimonialContainer">
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card">
-
-          <div class="testimonial-content">
-            <p class="testimonial-author">Kate Rogers - Graphic Designer</p>
-            <p class="testimonial-title">Amazing Customer Service</p>
-            <p class="testimonial-text">
-              I needed a refund for tickets to an event that was changed last minute.
-              I experienced great customer service and the issue was resolved in a timely manner.
-            </p>
-            <div class="rating">★★★★★</div>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card">
-
-          <div class="testimonial-content">
-            <p class="testimonial-author">John Smith - Entrepreneur</p>
-            <p class="testimonial-title">Incredible Support</p>
-            <p class="testimonial-text">
-              The team was fantastic! They resolved my issues quickly and ensured I was completely satisfied.
-            </p>
-            <div class="rating">★★★★★</div>
-          </div>
+          <span>Our Client</span>
+          <span class="description-title">Reviews</span>
         </div>
       </div>
 
-      <!-- Navigation Dots -->
-      <div class="testimonial-dots">
-        <span class="testimonial-dot active" data-index="0"></span>
-        <span class="testimonial-dot" data-index="1"></span>
+      <div class="container">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Testimonial -->
+            <div class="carousel-item active">
+              <div class="testimonial-item text-center" data-aos="fade-up">
+                <div class="testimonial-icon mb-4">
+                  <i class="bi bi-person-circle display-3"></i>
+                </div>
+                <h4 class="client-name mb-2">Dr. Anjali</h4>
+                <div class="stars mb-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Being Digital transformed our online presence! Within 3 months, we doubled our leads."
+                </p>
+              </div>
+            </div>
+
+            <!-- Second Testimonial -->
+            <div class="carousel-item">
+              <div class="testimonial-item text-center" data-aos="fade-up">
+                <div class="testimonial-icon mb-4">
+                  <i class="bi bi-person-circle display-3"></i>
+                </div>
+                <h4 class="client-name mb-2">Arjun R</h4>
+                <div class="stars mb-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Our engagement skyrocketed thanks to Being Digital!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <script>
-      const container = document.getElementById('testimonialContainer');
-      const dots = document.querySelectorAll('.testimonial-dot');
-      let index = 0;
-
-      function updateTestimonials() {
-        container.style.transform = `translateX(-${index * 100}%)`;
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[index].classList.add('active');
+    <style>
+      /* General Styles */
+      .testimonial-item {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 800px;
       }
 
-      function autoSlide() {
-        index = (index + 1) % dots.length;
-        updateTestimonials();
+      .testimonial-icon {
+        color: #fc6767;
       }
 
-      dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-          index = i;
-          updateTestimonials();
-        });
-      });
+      .client-name {
+        color: #2c4964;
+        font-size: 24px;
+        font-weight: 600;
+      }
 
-      setInterval(autoSlide, 5000);
-    </script>
+      .client-position {
+        color: #777;
+        font-size: 16px;
+      }
 
+      .stars {
+        color: #ffc107;
+      }
 
+      .stars i {
+        margin: 0 2px;
+      }
 
+      .testimonial-text {
+        color: #666;
+        font-size: 18px;
+        line-height: 1.6;
+        font-style: italic;
+      }
+
+      /* Navigation Controls */
+      .carousel-control-prev,
+      .carousel-control-next {
+
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(1);
+      }
+
+      /* Responsive Buttons */
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 50px;
+        height: 50px;
+      }
+
+      @media (max-width: 768px) {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      /* Indicators */
+      .carousel-indicators {
+        bottom: -50px;
+      }
+
+      .carousel-indicators button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #fc6767;
+        opacity: 0.5;
+        margin: 0 5px;
+      }
+
+      .carousel-indicators button.active {
+        opacity: 1;
+      }
+
+      /* Responsive Testimonial Content */
+      @media (max-width: 768px) {
+        .testimonial-item {
+          padding: 20px;
+        }
+
+        .testimonial-text {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .testimonial-text {
+          font-size: 14px;
+        }
+      }
+    </style>
 
 
     <!-- /*--------------------------------------------------------------
@@ -883,7 +944,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Our Address</h3>
-                <p>123 Digital Street, Tech City, 12345</p>
+                <p>Thiruvananthapuram, India</p>
               </div>
             </div>
           </div>
@@ -893,7 +954,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>contact@beingdigital.com</p>
+                <p>sangig@tltechnologies.net</p>
               </div>
             </div>
           </div>
@@ -923,152 +984,204 @@
 
     </section>
 
-  </main>
 
-
-
-  <!-- /*--------------------------------------------------------------
+    <!-- /*--------------------------------------------------------------
                         # Footer Section
   --------------------------------------------------------------*/ -->
 
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="row justify-content-between">
-        <!-- Links Sections -->
-        <div class="col-md-3 col-sm-6">
-          <h4 class="footer-title">Navigate</h4>
-          <ul class="footer-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#features">Features</a></li>
-          </ul>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- Links Sections -->
+          <div class="col-md-3 col-sm-6">
+            <h4 class="footer-title">Navigate</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#features">Features</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4 class="footer-title">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#testimonial">Testimonials</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4 class="footer-title">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <h4 class="footer-title">Resources</h4>
-          <ul class="footer-links">
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonial">Testimonials</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+        <!-- Social Media Links -->
+        <div class="social-links text-center mt-4">
+          <a href="https://www.linkedin.com/company/tltechnologiespvtltd" class="social-icon"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.facebook.com/tltechnologiespvtltd" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/tltechnologiespvtltd" class="social-icon"><i
+              class="bi bi-instagram"></i></a>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <h4 class="footer-title">Legal</h4>
-          <ul class="footer-links">
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions</a></li>
-          </ul>
+
+        <!-- Copyright -->
+        <div class="copyright text-center mt-4">
+          <p>© 2024 <strong style="color: #fc6767;">TL Technologies</strong>. All Rights Reserved.</p>
         </div>
       </div>
 
-      <!-- Social Media Links -->
-      <div class="social-links text-center mt-4">
-        <a href="https://www.linkedin.com/company/tltechnologiespvtltd" class="social-icon"><i
-            class="bi bi-linkedin"></i></a>
-        <a href="https://www.facebook.com/tltechnologiespvtltd" class="social-icon"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/tltechnologiespvtltd" class="social-icon"><i class="bi bi-instagram"></i></a>
+      <!-- Modals -->
+      <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6 class="mb-2">Effective Date: July 30th, 2020</h6>
+
+              <section class="mb-2">
+                <p>At TL Technologies, we prioritize your privacy and are committed to protecting your personal data.
+                  This Privacy Policy outlines how we collect, use, and safeguard your information when you use our
+                  website (<a href="https://www.tltechnologies.net/index.html"
+                    target="_blank">https://www.tltechnologies.net/index.html</a>) and services.</p>
+                <h6 class="fw-bold">1. Information We Collect</h6>
+                <ul>
+                  <li>Personal Information: Name, email address, phone number, and any other information provided when
+                    contacting us or using our services.</li>
+                  <li>Usage Data: Browser type, IP address, time spent on the website, and pages visited.</li>
+                  <li>Cookies: Small data files stored on your device to enhance user experience.</li>
+                </ul>
+                <h6 class="fw-bold">2. How We Use Your Information</h6>
+                <ul>
+                  <li>To provide, operate, and improve our services.</li>
+                  <li>To respond to inquiries or provide customer support.</li>
+                  <li>To send updates, newsletters, or promotional materials with your consent.</li>
+                  <li>To ensure compliance with legal and regulatory requirements.</li>
+                </ul>
+                <h6 class="fw-bold">3. Sharing of Information</h6>
+                <p>We do not sell or share your information with third parties, except:</p>
+                <ul>
+                  <li>When required by law or to protect our rights.</li>
+                  <li>With trusted service providers assisting in operations.</li>
+                  <li>With your consent for specific purposes.</li>
+                </ul>
+                <h6 class="fw-bold">4. Your Rights</h6>
+                <ul>
+                  <li>Access and update your personal information.</li>
+                  <li>Request deletion of your data, subject to applicable laws.</li>
+                  <li>Opt-out of receiving promotional communications.</li>
+                </ul>
+                <h6 class="fw-bold">5. Security</h6>
+                <p>We implement industry-standard measures to protect your data from unauthorized access or disclosure.
+                </p>
+                <h6 class="fw-bold">6. Contact Us</h6>
+                <p>For questions about this Privacy Policy, please contact us at <a
+                    href="mailto:sangig@tltechnologies.net">sangig@tltechnologies.net</a>.</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Copyright -->
-      <div class="copyright text-center mt-4">
-        <p>© 2024 <strong style="color: #fc6767;">TL Technologies</strong>. All Rights Reserved.</p>
+
+
+      <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6 class="mb-2">Effective Date: July 30th, 2020</h6>
+
+              <section class="mb-2">
+                <p>Welcome to TL Technologies. These Terms and Conditions govern your use of our website (<a
+                    href="https://www.tltechnologies.net/index.html"
+                    target="_blank">https://www.tltechnologies.net/index.html</a>) and services. By accessing or using
+                  our website, you agree to comply with these terms.</p>
+                <h6 class="fw-bold">1. Use of Website</h6>
+                <ul>
+                  <li>You must use the website for lawful purposes only.</li>
+                  <li>You agree not to interfere with the security or functionality of the website.</li>
+                </ul>
+                <h6 class="fw-bold">2. Intellectual Property</h6>
+                <ul>
+                  <li>All content on the website, including text, images, and logos, is owned by TL Technologies and
+                    protected by intellectual property laws.</li>
+                  <li>Unauthorized use or reproduction is prohibited.</li>
+                </ul>
+                <h6 class="fw-bold">3. Disclaimers</h6>
+                <ul>
+                  <li>The website is provided "as is" without warranties of any kind.</li>
+                  <li>TL Technologies is not liable for damages resulting from the use of the website.</li>
+                </ul>
+                <h6 class="fw-bold">4. Modifications</h6>
+                <p>We reserve the right to update these terms at any time. Continued use of the website signifies
+                  acceptance of the revised terms.</p>
+                <h6 class="fw-bold">5. Governing Law</h6>
+                <p>These terms are governed by the laws of [Insert Jurisdiction].</p>
+                <h6 class="fw-bold">Contact Us</h6>
+                <p>For questions about these Terms and Conditions, please contact us at <a
+                    href="mailto:sangig@tltechnologies.net">sangig@tltechnologies.net</a>.</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- /End Footer Section -->
+
+
+
+    <!-- /Cookie Section -->
+    <div id="cookieConsent" class="d-none">
+      <div class="container cookieConsentContainer">
+        <p class="text-white mb-0 col-md-8">We use cookies to ensure you get the best experience on our website.</p>
+        <div class="col-md-4 text-md-end mt-2 mt-md-0">
+          <button id="acceptCookies" class="btn btn-success me-2">Accept</button>
+          <button id="rejectCookies" class="btn btn-danger">Reject</button>
+        </div>
       </div>
     </div>
 
-    <!-- Modals -->
-    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h6 class="mb-4">Last Updated: December 2024</h6>
 
-            <section>
-              <h6 class="fw-bold">1. Information We Collect</h6>
-              <p>We collect information that you provide directly to us, including but not limited to:</p>
-              <ul>
-                <li>Contact information (name, email, phone number)</li>
-                <li>Account credentials</li>
-                <li>Payment information</li>
-                <li>Communication preferences</li>
-              </ul>
-            </section>
 
-            <section>
-              <h6 class="fw-bold">2. How We Use Your Information</h6>
-              <p>Your information helps us to:</p>
-              <ul>
-                <li>Provide, maintain, and improve our services</li>
-                <li>Process your transactions</li>
-                <li>Send you technical notices and support messages</li>
-                <li>Respond to your comments and questions</li>
-              </ul>
-            </section>
-          </div>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short">
+      </i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader-container">
+        <img src="assets/img/logo.png" alt="Logo" class="loader-logo">
+        <div class="loader-progress">
+          <div class="progress-bar"></div>
         </div>
+        <div class="loader-text">Loading... 0%</div>
       </div>
     </div>
 
-    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h6 class="mb-4">Last Updated: December 2024</h6>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-            <section>
-              <h6 class="fw-bold">1. Agreement to Terms</h6>
-              <p>By accessing our services, you agree to be bound by these Terms and Conditions and all applicable laws
-                and regulations.</p>
-            </section>
-
-            <section>
-              <h6 class="fw-bold">2. Use License</h6>
-              <p>Permission is granted to temporarily download one copy of the materials (information or software) on TL
-                Technologies's website for personal, non-commercial transitory viewing only.</p>
-            </section>
-
-            <section>
-              <h6 class="fw-bold">3. Disclaimer</h6>
-              <p>The materials on TL Technologies's website are provided on an 'as is' basis. TL Technologies makes no
-                warranties, expressed or implied, and hereby disclaims and negates all other warranties including,
-                without limitation, implied warranties or conditions of merchantability, fitness for a particular
-                purpose, or non-infringement of intellectual property or other violation of rights.</p>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- /End Footer Section -->
-
-
-
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
