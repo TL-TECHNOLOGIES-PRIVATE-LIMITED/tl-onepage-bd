@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- <======================================== NOTES START ==============================================>
+
+ Libraries used: "Bootstrap" for CSS" for icons, "AOS" for animations.
+ Refer to the official documentation of the mentioned libraries before making changes in the code.
+
+ To run the code:
+ 1. Simply open the `index.html` (or the main HTML file) in your web browser.
+   - You can double-click on the file or right-click and select "Open with" to choose your preferred browser.
+
+ Created Date: 3-Dec-2024 || Created By: Arjun N || Module: 1 ||
+ Modified Date: - || Modified By: - || Module: 1 ||
+ Modified Date: - || Modified By: - || Module: 1 ||
+
+ Technical Summary (Pre-setups):
+ - Created Date/By: Arjun N
+ - Domain: 
+ - Hosting: Vercel
+ - SSL: Cloudflare
+
+ Phase Summary:
+ - Created Date/By: Arjun N  
+ - Phase 1: Setups || Initial configurations, environment, and library setup.
+ - Phase 2: Development/Main Page Creation || Feature implementation and main page design.
+ - Phase 3: Production || Deployment, testing, and final production readiness.
+
+ Library Versions:
+ - Bootstrap: 5.x.x
+ - Nice Select: 1.x.x
+ - AOS: 2.x.x
+
+ Known Issues:
+ - None at this time.
+
+<======================================== NOTES END ==============================================> -->
+
+
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Being-Digital</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <title>Being Digital</title>
+
+  <!-- meta tags -->
+  <meta name="title" content="Being Digital - Your Ultimate Digital Marketing Solution">
+  <meta name="description"
+    content="Transform your online presence with Being Digital. Expert digital marketing services including social media management, SEO, content creation, and Google advertising. Get 3X visibility in 3 months.">
+  <meta name="keywords"
+    content="digital marketing agency, social media marketing, SEO services, content creation, Google ads, digital marketing solutions, online marketing, digital strategy, web development">
+  <meta name="author" content="TL Technologies">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beingdigital.tltechnologies.net">
+  <meta property="og:title" content="Being Digital - Digital Marketing Solutions That Drive Results">
+  <meta property="og:description"
+    content="Expert digital marketing services with proven ROI. Social media management, SEO, content creation, and Google advertising solutions for business growth.">
+  <meta property="og:image" content="https://beingdigital.tltechnologies.net/assets/img/BDMock.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://beingdigital.tltechnologies.net">
+  <meta property="twitter:title" content="Being Digital - Transform Your Online Presence">
+  <meta property="twitter:description"
+    content="Comprehensive digital marketing solutions: Social media, SEO, content creation, and Google ads. Start with just $99 setup fee.">
+  <meta property="twitter:image" content="https://beingdigital.tltechnologies.net/assets/img/BDMock.png">
+
+  <!-- Additional Tags -->
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://beingdigital.tltechnologies.net">
+  <!-- End meta tags -->
 
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon" />
@@ -30,30 +94,6 @@
   <link href="assets/css/cookie.css" rel="stylesheet" />
 
 </head>
-
- <!-- <======================================== NOTES START ==============================================>
-
-Libraries used :   "Bootstrap  " for css , "Fontawesome  " for icons, "Magnific Popup  " for lightbox, "Nice Select  " for dropdowns, "AOS  " for animations
-Read the documentaion in their respective sites for the above mentioned libraries before making changes in the code.
-To run the code: npm run dev
-First install all dependencies :- npm intsall
-Then run the code :- npm run dev
-
-created date : 3-Dec-2024 || created by : Arjun  || module : 1 ||
-modified date : -|| modified by : || module : 1 ||
-modified date : - || modified by :  || module : 1 ||
-
-Technical summary(Pre-setups) created date/by :  Gurudas P R  ||
-Domain :   || beingdigital.tltechnologies.net
-Hosting :   || vercel || 
-SSL :   || cloudflare ||
-
-Phase summary :   || created date/by :  Arjun   || Murthasa Ali 
-Phase 1 :  SetUps ||
-Phase 2 :  Development/Main page creation ||
-Phase 3 :  Production  ||
-
- <======================================== NOTES END ==============================================> -->
 
 
 <body class="index-page">
@@ -687,57 +727,199 @@ Phase 3 :  Production  ||
                      # Testimonial Section
   --------------------------------------------------------------*/ -->
 
-<section>
+    <section id="testimonial" class="testimonial section">
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>What Our Clients Say</h2>
+        <h2>Testimonials</h2>
         <div>
-          <span>Hear from businesses we’ve transformed</span>
-          <!-- <span class="description-title">Get in Touch</span> -->
+          <span>Our Client</span>
+          <span class="description-title">Reviews</span>
         </div>
       </div>
-    <section id="testimonial" class="testimonial-section">
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <div>
-          <span>Hear from businesses we’ve transformed</span>
-        </div>
-      </div> -->
-      <div class="testimonial-container" id="testimonialContainer">
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card">
 
-          <div class="testimonial-content">
-            <p class="testimonial-author">Kate Rogers - Graphic Designer</p>
-            <p class="testimonial-title">Amazing Customer Service</p>
-            <p class="testimonial-text">
-              I needed a refund for tickets to an event that was changed last minute.
-              I experienced great customer service and the issue was resolved in a timely manner.
-            </p>
-            <div class="rating">★★★★★</div>
+      <div class="container">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Testimonial -->
+            <div class="carousel-item active">
+              <div class="testimonial-item text-center" data-aos="fade-up">
+                <div class="testimonial-icon mb-4">
+                  <i class="bi bi-person-circle display-3"></i>
+                </div>
+                <h4 class="client-name mb-2">Dr. Anjali</h4>
+                <div class="stars mb-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Being Digital transformed our online presence! Within 3 months, we doubled our leads."
+                </p>
+              </div>
+            </div>
+
+            <!-- Second Testimonial -->
+            <div class="carousel-item">
+              <div class="testimonial-item text-center" data-aos="fade-up">
+                <div class="testimonial-icon mb-4">
+                  <i class="bi bi-person-circle display-3"></i>
+                </div>
+                <h4 class="client-name mb-2">Arjun R</h4>
+                <div class="stars mb-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Our engagement skyrocketed thanks to Being Digital!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
           </div>
         </div>
-
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card">
-
-          <div class="testimonial-content">
-            <p class="testimonial-author">John Smith - Entrepreneur</p>
-            <p class="testimonial-title">Incredible Support</p>
-            <p class="testimonial-text">
-              The team was fantastic! They resolved my issues quickly and ensured I was completely satisfied.
-            </p>
-            <div class="rating">★★★★★</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Navigation Dots -->
-      <div class="testimonial-dots">
-        <span class="testimonial-dot active" data-index="0"></span>
-        <span class="testimonial-dot" data-index="1"></span>
       </div>
     </section>
-    </section>
 
+    <style>
+      /* General Styles */
+      .testimonial-item {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 800px;
+      }
+
+      .testimonial-icon {
+        color: #fc6767;
+      }
+
+      .client-name {
+        color: #2c4964;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .client-position {
+        color: #777;
+        font-size: 16px;
+      }
+
+      .stars {
+        color: #ffc107;
+      }
+
+      .stars i {
+        margin: 0 2px;
+      }
+
+      .testimonial-text {
+        color: #666;
+        font-size: 18px;
+        line-height: 1.6;
+        font-style: italic;
+      }
+
+      /* Navigation Controls */
+      .carousel-control-prev,
+      .carousel-control-next {
+
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(1);
+      }
+
+      /* Responsive Buttons */
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 50px;
+        height: 50px;
+      }
+
+      @media (max-width: 768px) {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      /* Indicators */
+      .carousel-indicators {
+        bottom: -50px;
+      }
+
+      .carousel-indicators button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #fc6767;
+        opacity: 0.5;
+        margin: 0 5px;
+      }
+
+      .carousel-indicators button.active {
+        opacity: 1;
+      }
+
+      /* Responsive Testimonial Content */
+      @media (max-width: 768px) {
+        .testimonial-item {
+          padding: 20px;
+        }
+
+        .testimonial-text {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .testimonial-text {
+          font-size: 14px;
+        }
+      }
+    </style>
 
 
     <!-- /*--------------------------------------------------------------
@@ -960,6 +1142,9 @@ Phase 3 :  Production  ||
 
     <!-- /End Footer Section -->
 
+
+
+    <!-- /Cookie Section -->
     <div id="cookieConsent" class="d-none">
       <div class="container cookieConsentContainer">
         <p class="text-white mb-0 col-md-8">We use cookies to ensure you get the best experience on our website.</p>
@@ -971,12 +1156,12 @@ Phase 3 :  Production  ||
     </div>
 
 
-    
+
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short">
       </i>
-      </a>
+    </a>
 
     <!-- Preloader -->
     <div id="preloader">
@@ -998,4 +1183,5 @@ Phase 3 :  Production  ||
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
