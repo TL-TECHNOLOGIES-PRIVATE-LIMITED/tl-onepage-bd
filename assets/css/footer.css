@@ -1,0 +1,24 @@
+.copyright {
+    font-size: 14px;
+    color: #6c757d; /* Neutral text color */
+  }
+  
+  .copyright strong {
+    color: #fc6767; /* Keep brand color consistent */
+  }
+  
+  .powered-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between text and logo */
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  
+  .powered-by-logo {
+    height: 30px; /* Uniform logo size */
+    width: auto;
+    vertical-align: middle;
+  }
+  
